@@ -44,27 +44,29 @@ chmod +x ~/scripts/backup_script.sh
 ```
 ![Captura de pantalla 2025-03-16 194500](https://github.com/user-attachments/assets/e4b49663-1f0c-401a-9548-f6a0bf7f577c)
 
-Aquí he tenido errores así que vamos a revisarlos en el archivo 'backup_script.sh'
+- Aquí he tenido errores así que vamos a revisarlos en el archivo 'backup_script.sh'
 
 ![Captura de pantalla 2025-03-16 194326](https://github.com/user-attachments/assets/a2ab6a4a-53f2-4582-b79d-58e6c733d227)
 
-Como se puede ver hay que corregir los iguales de los '_DIR' y el if de la línea 9. Aún así es posible que te salgan otros errores, también es posible que no tengas el git instalado, te lo pndrá en la misma terminal, así que hacemos lo siguiente:
+- Como se puede ver hay que corregir los iguales de los '_DIR' y el if de la línea 9. Aún así es posible que te salgan otros errores, también es posible que no tengas el git instalado, te lo pndrá en la misma terminal, así que hacemos lo siguiente:
 
 ![Captura de pantalla 2025-03-16 195757](https://github.com/user-attachments/assets/b197c77f-e967-4372-8336-26cc2b8d50c6)
 
-Una vez hecho esto te debe salir lo siguiente al hacer '~/scripts/backup_script.sh b'
+- Una vez hecho esto te debe salir lo siguiente al hacer '~/scripts/backup_script.sh b'
 
 ![Captura de pantalla 2025-03-16 201258](https://github.com/user-attachments/assets/18a658fe-3670-4dc5-88b1-7314db0f7fb3)
 
-Necesitas crear el e-mail y contraseña, yo puse el de Cesur y mio nombre (se me olvidó hacer captura) con los siguientes comandos:
+- Necesitas crear el e-mail y contraseña, yo puse el de Cesur y mio nombre (se me olvidó hacer captura) con los siguientes comandos:
+  
 ```bash
 git config --global user.email "tu_correo@example.com"
 git config --global user.name "Tu Nombre"
 ```
-Una vez hecho, te debe salir lo siguiente:
+- Una vez hecho, te debe salir lo siguiente:
+- 
 ![Captura de pantalla 2025-03-16 201547](https://github.com/user-attachments/assets/70573a7d-1c9f-405b-be60-44f616964992)
 
-Podemos comprobar si se ha creado el git usando los comandos de la imagen
+- Podemos comprobar si se ha creado el git usando los comandos de la imagen
 
 ![Captura de pantalla 2025-03-16 201754](https://github.com/user-attachments/assets/4bfeb63e-26cf-49a7-b620-0b67dcbb0a39)
 
