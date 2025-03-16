@@ -1,16 +1,14 @@
-# 📌 Guía paso a paso para ejecutar Ubuntu Backup Script
+# Guía paso a paso para ejecutar Ubuntu Backup Script
 
-## 🛠️ Paso 1: Abrir la terminal
-### 📍 Dónde hacerlo:
+## Paso 1: Abrir la terminal
+### 📌 Dónde hacerlo:
 Abre la aplicación Terminal en Ubuntu. Puedes hacerlo presionando `Ctrl + Alt + T` o buscándola en el menú de aplicaciones.
 
 ---
 
-## 💂️ Paso 2: Crear la carpeta `scripts` en tu home
-### 📍 Dónde hacerlo:
-En la terminal.
+## Paso 2: Crear la carpeta `scripts` en tu home
 
-### 📌 Comando a ejecutar:
+### Comando a ejecutar:
 ```bash
 mkdir -p ~/scripts
 ```
@@ -19,11 +17,11 @@ Ejecuta `ls ~` y asegúrate de que aparece la carpeta `scripts`.
 
 ---
 
-## 📝 Paso 3: Crear el archivo `excluir.txt`
-### 📍 Dónde hacerlo:
+## Paso 3: Crear el archivo `excluir.txt`
+### 📌 Dónde hacerlo:
 En la terminal dentro de `scripts`.
 
-### 📌 Comando a ejecutar:
+### Comando a ejecutar:
 ```bash
 ls -A ~/.config | grep -E '^[aeiouAEIOU]' > ~/scripts/excluir.txt
 ```
@@ -32,11 +30,11 @@ Abre el archivo con `cat ~/scripts/excluir.txt` y revisa si hay nombres de archi
 
 ---
 
-## 💁 Paso 4: Crear la carpeta `backup`
-### 📍 Dónde hacerlo:
+## Paso 4: Crear la carpeta `backup`
+### 📌 Dónde hacerlo:
 En la terminal.
 
-### 📌 Comando a ejecutar:
+### Comando a ejecutar:
 ```bash
 mkdir -p ~/backup
 ```
@@ -45,15 +43,15 @@ Ejecuta `ls ~` y confirma que la carpeta `backup` está creada.
 
 ---
 
-## 📌 Paso 5: Crear el script y darle permisos de ejecución
-### 📍 Dónde hacerlo:
+## Paso 5: Crear el script y darle permisos de ejecución
+### 📌 Dónde hacerlo:
 Dentro de `scripts`.
 
-### 📌 Comando para abrir un editor de texto y crear el script:
+### Comando para abrir un editor de texto y crear el script:
 ```bash
 nano ~/scripts/backup.sh
 ```
-### ✏️ Copia y pega el siguiente código en el editor nano:
+### 📝 Copia y pega el siguiente código en el editor nano:
 ```bash
 #!/bin/bash
 
@@ -100,12 +98,12 @@ case "$1" in
         ;;
 esac
 ```
-### 📌 Para guardar en nano:
+### 🔎 Para guardar en nano:
 1. Presiona `Ctrl + X`
 2. Luego presiona `Y` (Sí)
 3. Presiona `Enter` para confirmar.
 
-### 📌 Darle permisos de ejecución:
+### Darle permisos de ejecución:
 ```bash
 chmod +x ~/scripts/backup.sh
 ```
@@ -114,11 +112,11 @@ Ejecuta `ls -l ~/scripts/backup.sh` y revisa que tenga permisos de ejecución `(
 
 ---
 
-## 📌 Paso 6: Iniciar el repositorio Git en `backup`
-### 📍 Dónde hacerlo:
+## Paso 6: Iniciar el repositorio Git en `backup`
+### 📌 Dónde hacerlo:
 En la terminal.
 
-### 📌 Comando a ejecutar:
+### Comando a ejecutar:
 ```bash
 cd ~/backup
 git init
@@ -128,11 +126,8 @@ Ejecuta `ls -a ~/backup` y asegúrate de que aparece la carpeta `.git`.
 
 ---
 
-## 📌 Paso 7: Hacer una copia de seguridad
-### 📍 Dónde hacerlo:
-En la terminal.
-
-### 📌 Comando a ejecutar:
+## Paso 7: Hacer una copia de seguridad
+### Comando a ejecutar:
 ```bash
 ~/scripts/backup.sh b
 ```
@@ -142,11 +137,8 @@ En la terminal.
 
 ---
 
-## 📌 Paso 8: Restaurar la copia de seguridad
-### 📍 Dónde hacerlo:
-En la terminal.
-
-### 📌 Comando a ejecutar:
+## Paso 8: Restaurar la copia de seguridad
+### Comando a ejecutar:
 ```bash
 ~/scripts/backup.sh r
 ```
@@ -155,25 +147,10 @@ Los archivos de `.config` deberían restaurarse desde `backup`.
 
 ---
 
-## 📌 Paso 9: Probar con parámetros incorrectos
-### 📍 Dónde hacerlo:
-En la terminal.
-
-### 📌 Comando a ejecutar:
+## Paso 9: Probar con parámetros incorrectos
+### Comando a ejecutar:
 ```bash
 ~/scripts/backup.sh x
 ```
 ### ✅ Resultado esperado:
 El script debe mostrar: `Parámetro inválido. Usa 'b' para backup o 'r' para restaurar.`
-
----
-
-## 🎯 Conclusión
-Siguiendo esta guía, has aprendido a:
-✅ Crear carpetas y archivos en Ubuntu.
-✅ Usar comandos básicos como `mkdir`, `ls`, `grep`, `chmod`, `cp`, `rsync` y `git`.
-✅ Hacer un script en Bash con automatización.
-✅ Crear un sistema de copia de seguridad con control de versiones en Git.
-
-🚀 ¡Ya tienes un script funcional para hacer copias de seguridad de archivos en Ubuntu!
-
