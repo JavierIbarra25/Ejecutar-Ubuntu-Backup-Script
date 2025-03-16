@@ -1,6 +1,6 @@
 Siguiendo los pasos que hemos en la guía, podemos hacerlo desde esta ubicación sin necesidad de cambiar de directorio. Si en algún momento necesitamos navegar a otro directorio, podemos usar el comando 'cd' seguido de la ruta deseada.
 
-##Aquí están los pasos que he seguido:
+## Aquí están los pasos que he seguido:
 
 ### 1. Crear el directorio `scripts` en tu home:
 
