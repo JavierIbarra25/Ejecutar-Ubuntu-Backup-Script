@@ -45,6 +45,7 @@ chmod +x ~/scripts/backup_script.sh
 ![Captura de pantalla 2025-03-16 194500](https://github.com/user-attachments/assets/e4b49663-1f0c-401a-9548-f6a0bf7f577c)
 
 Aquí he tenido errores así que vamos a revisarlos en el archivo 'backup_script.sh'
+
 ![Captura de pantalla 2025-03-16 194326](https://github.com/user-attachments/assets/a2ab6a4a-53f2-4582-b79d-58e6c733d227)
 
 Como se puede ver hay que corregir los iguales de los '_DIR' y el if de la línea 9. Aún así es posible que te salgan otros errores, también es posible que no tengas el git instalado, te lo pndrá en la misma terminal, así que hacemos lo siguiente:
