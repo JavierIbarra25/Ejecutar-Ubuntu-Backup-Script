@@ -56,7 +56,7 @@ chmod +x ~/scripts/backup_script.sh
 
 ![Captura de pantalla 2025-03-16 201258](https://github.com/user-attachments/assets/18a658fe-3670-4dc5-88b1-7314db0f7fb3)
 
-- Necesitas crear el e-mail y contraseña, yo puse el de Cesur y mio nombre (se me olvidó hacer captura) con los siguientes comandos:
+- Necesitas crear el e-mail y contraseña, yo puse el de Cesur y mi nombre (se me olvidó hacer captura) con los siguientes comandos:
   
 ```bash
 git config --global user.email "tu_correo@example.com"
