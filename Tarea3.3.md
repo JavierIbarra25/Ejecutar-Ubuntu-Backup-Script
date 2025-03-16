@@ -18,7 +18,7 @@ ls -A ~/.config | grep -E '^[aeiouAEIOU]' > ~/scripts/excluir.txt
 
 ---
 
-3. Crear el script para la copia de seguridad:
+### 3. Crear el script para la copia de seguridad:
 ```bash
 nano ~/scripts/backup_script.sh
 ```
@@ -31,14 +31,14 @@ Luego, dentro del editor nano, puedes escribir el contenido del script que hemos
 
 ---
 
-4. Hacer que el script sea ejecutable:
+### 4. Hacer que el script sea ejecutable:
 ```bash
 chmod +x ~/scripts/backup_script.sh
 ```
 ![Captura de pantalla 2025-03-16 193017](https://github.com/user-attachments/assets/5d4ba78d-3c2e-473e-b3c6-d6f99e30a148)
 ---
 
-5. Ejecutar el script para realizar una copia de seguridad:
+### 5. Ejecutar el script para realizar una copia de seguridad:
 ```bash
 ~/scripts/backup_script.sh b
 ```
@@ -72,7 +72,7 @@ git config --global user.name "Tu Nombre"
 
 ---
 
-6. Ejecutar el script para restaurar una copia de seguridad:
+### 6. Ejecutar el script para restaurar una copia de seguridad:
 ```bash
 ~/scripts/backup_script.sh r
 ```
